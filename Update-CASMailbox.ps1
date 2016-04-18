@@ -33,7 +33,7 @@
 
 Param(
     [parameter(Mandatory=$false,ValueFromPipeline=$false,HelpMessage='SMTP Server address for sending result summary')]
-        [string]$GroupName = "bkmail_POP",
+        [string]$GroupName = "mcmmail_POP",
     [parameter(Mandatory=$false,ValueFromPipeline=$false)]
         [switch]$POP,
     [parameter(Mandatory=$false,ValueFromPipeline=$false)]
