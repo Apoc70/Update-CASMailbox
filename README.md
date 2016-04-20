@@ -49,7 +49,7 @@ Enable OWA for members of group MyCompany_OWA_enabled and getting verbose output
 
 ##TechNet Gallery
 Find the script at TechNet Gallery
-* 
+* https://gallery.technet.microsoft.com/Change-CASMailbox-protocol-f9a15c1f
 
 ##Credits
 Written by: Thomas Stensitzki

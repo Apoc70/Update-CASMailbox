@@ -64,11 +64,11 @@
 
     .EXAMPLE
     Enable OWA for members of group MyCompany_OWA_enabled and getting verbose output
-    Update-CAS-Mailbox.ps1 -OWA -FeatureEnabled $true -GroupName MyCompany_OWA_enabled - Verbose
+    Update-CAS-Mailbox.ps1 -OWA -FeatureEnabled $true -GroupName MyCompany_OWA_enabled -Verbose
 #>
 
 Param(
-    [parameter(Mandatory=$false,ValueFromPipeline=$false,HelpMessage='SMTP Server address for sending result summary')]
+    [parameter(Mandatory=$false,ValueFromPipeline=$false)]
         [string]$GroupName = "",
     [parameter(Mandatory=$false,ValueFromPipeline=$false)]
         [switch]$POP,
