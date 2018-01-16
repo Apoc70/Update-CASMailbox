@@ -8,7 +8,7 @@
 	THIS CODE IS MADE AVAILABLE AS IS, WITHOUT WARRANTY OF ANY KIND. THE ENTIRE 
 	RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS CODE REMAINS WITH THE USER.
 	
-	Version 1.0, 2016-04-18
+	Version 1.1, 20178-01-16
 
     Ideas, comments and suggestions to support@granikos.eu 
  
@@ -38,7 +38,8 @@
 
     Revision History 
     -------------------------------------------------------------------------------- 
-    1.0     Initial community release 
+    1.0 Initial community release 
+    1.1 Fixed issue #1
 	
 	.PARAMETER GroupName
     Name of Active Directory security group with mailbox user accounts to configure CAS mailbox settings
@@ -155,6 +156,8 @@ function Set-CASFeature {
     $expr = "Set-CASMailbox -Identity $($CasUserDN) $($FeatureAttribute) -ErrorAction Continue"
 
     Write-Verbose "Invoke: $($expr)"
+
+    Invoke-Expression $expr
 
     # Set-CASMailbox -Identity $CasUserDN $FeatureAttribute -ErrorAction Continue   
 
